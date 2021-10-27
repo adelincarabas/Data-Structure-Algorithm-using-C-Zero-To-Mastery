@@ -11,13 +11,12 @@ int main() {
         cin>>a[i];
     }
 
-    int sum = 0;
+    int largest = 0;
     for(int i = 0; i < n; i++){
-        sum = sum + a[i];
+        if(largest <= a[i])
+        largest = a[i];
     }
-
-    cout<<sum<<endl;
-
+    cout<<largest;
 
     return 0;
 }
